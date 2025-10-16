@@ -1,5 +1,8 @@
 hello
 goodbye
+'''
+THIS IS A DOC STRING
+'''
 
 for i in range(0, 15):
 
@@ -16,7 +19,10 @@ print("14 inches")
 
 def analyze_numbers(numbers):
     total = sum(numbers)
-    avg = total / len(numbers) if numbers else 0
+    if numbers:
+      avg = total / len(numbers)
+    else:
+      avg = 0
     smallest = min(numbers) if numbers else None
     largest = max(numbers) if numbers else None
     evens = len([n for n in numbers if n % 2 == 0])
@@ -30,3 +36,6 @@ def analyze_numbers(numbers):
 r1 = 10
 def add(n1, n2):
   return n1+n2
+
+v1, v2, v3 = 1,2,3
+print("Shudong is a cutie hunk")
